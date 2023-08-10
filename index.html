@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Seekaplayer's Todo List | vanilla JavaScript</title>
+  </head>
+  <body>
+    <header class="primaryHeader">
+      <div class="headerWrapper">
+        <span class="logo">Seekaplayer's Todo List</span>
+        <form onsubmit="addTodoFromForm(event);" class="todoForm">
+          <input
+            data-state="post"
+            data-itemid=""
+            type="text"
+            id="todoInput"
+            name="todoInput"
+            placeholder="What needs to be done?"
+          />
+        </form>
+      </div>
+    </header>
+    <main>
+      <div class="container" id="root"></div>
+    </main>
+    <footer class="primaryFooter">
+      &copy; <span id="copyrightDate"></span>, Seekaplayer, All Rights Reserved.
+    </footer>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
